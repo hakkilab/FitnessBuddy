@@ -1,0 +1,373 @@
+/*  ===== MOBILE styles (inherited by all devices) ===== 
+/*  ===== See tablet, desktop, and print @media queries at the bottom.
+
+
+/*   ----- Imports  -----  */
+/* @font-face {
+     Add fonts from the server ... 
+    font-family: 'FontName';
+    src: url('FontName.woff2') format('woff2');
+} */
+
+/* ...or hosted services like Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import '../node_modules/modern-normalize/modern-normalize.css';
+/* npm install modern-normalize 
+                                Resets elements for browser consistancy.  
+                                http://nicolasgallagher.com/about-normalize-css/ 
+                              */
+
+/* @import "component1.css"; */
+/* Component-specific stylesheets, if any */
+
+
+/*   ----- Variables  -----  */
+:root {
+  --brightest: hsla(225, 100%, 50%, 1);
+  --darkest: hsla(225, 100%, 20%, 1);
+  --lightest: hsla(225, 100%, 90%, 1);
+  --transparent: hsla(225, 100%, 50%, 0.1);
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+  /* Can alternatively define in html {} or :root {} */
+  color: var(--lightest);
+  background-color: var(--darkest);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  border: 15px solid var(--brightest);
+  margin: 5%;
+  padding: 0%;
+}
+
+/* ----- Anchors ----- Text links */
+a {}
+
+a:link {}
+
+a:hover {}
+
+a:active {}
+
+a:visited {}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  background-color: var(--darkest);
+  color: var(--lightest);
+  border: 5px solid var(--brightest);
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 5%;
+  padding: 3%;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+nav a {
+  background-color: var(--darkest);
+  color: var(--lightest);
+  border: 5px solid var(--brightest);
+  border-radius: 15px;
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 2em;
+  margin: 5%;
+  padding: 3%;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+nav a:hover {
+  background-color: var(--lightest);
+  color: var(--darkest);
+  border: 5px solid var(--brightest);
+  border-radius: 15px;
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 2em;
+  margin: 5%;
+  padding: 3%;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+/*  ----- Page layout blocks -----  */
+header,
+footer {
+  background-color: var(--darkest);
+  color: var(--lightest);
+  border: 10px solid var(--brightest);
+  font-size: 2em;
+  font-weight: bold;
+  margin: 10%;
+  padding: 5%;
+}
+
+main {
+  background-color: var(--darkest);
+  color: var(--lightest);
+  border: 5px solid var(--brightest);
+  margin: 5%;
+  padding: 3%;
+  font-size: 1.5em;
+}
+
+section {}
+
+article {}
+
+#topic1 {}
+
+#topic2 {}
+
+#gallery1 {}
+
+#gallery2 {}
+
+div {}
+
+aside {}
+
+/* footer {} */
+
+/*  -----  Typography  ----- */
+p {}
+
+br {}
+
+ol,
+ul,
+dl {}
+
+li {}
+
+dt {}
+
+dd {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+/* Define consistant font family.*/
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+abbr {}
+
+acronym {}
+
+address {}
+
+blockquote {}
+
+q {}
+
+cite {}
+
+em {}
+
+hr {}
+
+mark {}
+
+s {}
+
+span {}
+
+strong {}
+
+sub {}
+
+sup {}
+
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+
+code {}
+
+kbd {}
+
+samp {}
+
+var {}
+
+del {}
+
+ins {}
+
+/*  ----- Table ----- */
+table {
+  border-collapse: collapse;
+  border: 5px solid var(--lightest);
+  padding: 15px;
+}
+
+caption {}
+
+thead {}
+
+tbody {}
+
+tfoot {}
+
+tr {
+  border: 1px solid var(--lightest);
+  padding: 15px;
+}
+
+tr:nth-child(even) {}
+
+th {
+  border: 1px solid var(--lightest);
+  padding: 15px;
+}
+
+td {
+  border: 1px solid var(--lightest);
+  padding: 15px;
+}
+
+td:nth-child(1) {}
+
+colgroup {}
+
+data {}
+
+datalist {}
+
+
+/*  ----- Form ----- */
+form {
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+fieldset {}
+
+legend {}
+
+label {
+  display: block;
+  padding: 10px 0px 10px 0px;
+}
+
+button {
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+input {
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+output {}
+
+meter {}
+
+progress {}
+
+select {
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+optgroup {}
+
+option {}
+
+textarea {}
+
+/* ----- Media ----- */
+figure {}
+
+figcaption {}
+
+img {}
+
+svg {}
+
+picture {}
+
+source {}
+
+iframe {}
+
+video {}
+
+audio {}
+
+embed {}
+
+object {}
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.floatright {}
+
+.floatleft {}
+
+.center-middle {}
+
+.ten {}
+
+.twenty {}
+
+.thirty {}
+
+.forty {}
+
+.fifty {}
+
+.sixty {}
+
+.seventy {}
+
+.eighty {}
+
+.radius {}
+
+.circle {}
+
+.boxshadow {}
+
+.tshadow {}
+
+.gradient {}
+
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
